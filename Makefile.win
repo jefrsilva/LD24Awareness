@@ -1,0 +1,150 @@
+# Project: Awareness
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = Engine.o Game.o main.o GameScreen.o Vector2D.o BoundingBox.o Environment.o Object.o SingleAntenna.o Animal.o DoubleAntenna.o TripleAntenna.o MultiTripleAntenna.o ObjectComparator.o MultiSingleAntenna.o Wall.o Food.o RandomNumberGenerator.o DNA.o DigestiveSystem.o PrimitiveEar.o DistanceEar.o DirectionalEar.o MultiDirectionalEar.o BasicNervousSystem.o NervousSystem.o Blindness.o Deafness.o Sensor.o PrimitiveEyes.o Eyes.o AdvancedNervousSystem.o NoNervousSystem.o Exploder.o Ghost.o Flyer.o Fadeout.o TitleScreen.o Fadein.o GameOverScreen.o GameCompleteScreen.o $(RES)
+LINKOBJ  = Engine.o Game.o main.o GameScreen.o Vector2D.o BoundingBox.o Environment.o Object.o SingleAntenna.o Animal.o DoubleAntenna.o TripleAntenna.o MultiTripleAntenna.o ObjectComparator.o MultiSingleAntenna.o Wall.o Food.o RandomNumberGenerator.o DNA.o DigestiveSystem.o PrimitiveEar.o DistanceEar.o DirectionalEar.o MultiDirectionalEar.o BasicNervousSystem.o NervousSystem.o Blindness.o Deafness.o Sensor.o PrimitiveEyes.o Eyes.o AdvancedNervousSystem.o NoNervousSystem.o Exploder.o Ghost.o Flyer.o Fadeout.o TitleScreen.o Fadein.o GameOverScreen.o GameCompleteScreen.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -lallegro-5.0.6-monolith-mt  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = Awareness.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Awareness.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Awareness.exe" $(LIBS)
+
+Engine.o: Engine.c
+	$(CPP) -c Engine.c -o Engine.o $(CXXFLAGS)
+
+Game.o: Game.c
+	$(CPP) -c Game.c -o Game.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+GameScreen.o: GameScreen.cpp
+	$(CPP) -c GameScreen.cpp -o GameScreen.o $(CXXFLAGS)
+
+Vector2D.o: Vector2D.cpp
+	$(CPP) -c Vector2D.cpp -o Vector2D.o $(CXXFLAGS)
+
+BoundingBox.o: BoundingBox.cpp
+	$(CPP) -c BoundingBox.cpp -o BoundingBox.o $(CXXFLAGS)
+
+Environment.o: Environment.cpp
+	$(CPP) -c Environment.cpp -o Environment.o $(CXXFLAGS)
+
+Object.o: Object.cpp
+	$(CPP) -c Object.cpp -o Object.o $(CXXFLAGS)
+
+SingleAntenna.o: SingleAntenna.cpp
+	$(CPP) -c SingleAntenna.cpp -o SingleAntenna.o $(CXXFLAGS)
+
+Animal.o: Animal.cpp
+	$(CPP) -c Animal.cpp -o Animal.o $(CXXFLAGS)
+
+DoubleAntenna.o: DoubleAntenna.cpp
+	$(CPP) -c DoubleAntenna.cpp -o DoubleAntenna.o $(CXXFLAGS)
+
+TripleAntenna.o: TripleAntenna.cpp
+	$(CPP) -c TripleAntenna.cpp -o TripleAntenna.o $(CXXFLAGS)
+
+MultiTripleAntenna.o: MultiTripleAntenna.cpp
+	$(CPP) -c MultiTripleAntenna.cpp -o MultiTripleAntenna.o $(CXXFLAGS)
+
+ObjectComparator.o: ObjectComparator.cpp
+	$(CPP) -c ObjectComparator.cpp -o ObjectComparator.o $(CXXFLAGS)
+
+MultiSingleAntenna.o: MultiSingleAntenna.cpp
+	$(CPP) -c MultiSingleAntenna.cpp -o MultiSingleAntenna.o $(CXXFLAGS)
+
+Wall.o: Wall.cpp
+	$(CPP) -c Wall.cpp -o Wall.o $(CXXFLAGS)
+
+Food.o: Food.cpp
+	$(CPP) -c Food.cpp -o Food.o $(CXXFLAGS)
+
+RandomNumberGenerator.o: RandomNumberGenerator.cpp
+	$(CPP) -c RandomNumberGenerator.cpp -o RandomNumberGenerator.o $(CXXFLAGS)
+
+DNA.o: DNA.cpp
+	$(CPP) -c DNA.cpp -o DNA.o $(CXXFLAGS)
+
+DigestiveSystem.o: DigestiveSystem.cpp
+	$(CPP) -c DigestiveSystem.cpp -o DigestiveSystem.o $(CXXFLAGS)
+
+PrimitiveEar.o: PrimitiveEar.cpp
+	$(CPP) -c PrimitiveEar.cpp -o PrimitiveEar.o $(CXXFLAGS)
+
+DistanceEar.o: DistanceEar.cpp
+	$(CPP) -c DistanceEar.cpp -o DistanceEar.o $(CXXFLAGS)
+
+DirectionalEar.o: DirectionalEar.cpp
+	$(CPP) -c DirectionalEar.cpp -o DirectionalEar.o $(CXXFLAGS)
+
+MultiDirectionalEar.o: MultiDirectionalEar.cpp
+	$(CPP) -c MultiDirectionalEar.cpp -o MultiDirectionalEar.o $(CXXFLAGS)
+
+BasicNervousSystem.o: BasicNervousSystem.cpp
+	$(CPP) -c BasicNervousSystem.cpp -o BasicNervousSystem.o $(CXXFLAGS)
+
+NervousSystem.o: NervousSystem.cpp
+	$(CPP) -c NervousSystem.cpp -o NervousSystem.o $(CXXFLAGS)
+
+Blindness.o: Blindness.cpp
+	$(CPP) -c Blindness.cpp -o Blindness.o $(CXXFLAGS)
+
+Deafness.o: Deafness.cpp
+	$(CPP) -c Deafness.cpp -o Deafness.o $(CXXFLAGS)
+
+Sensor.o: Sensor.cpp
+	$(CPP) -c Sensor.cpp -o Sensor.o $(CXXFLAGS)
+
+PrimitiveEyes.o: PrimitiveEyes.cpp
+	$(CPP) -c PrimitiveEyes.cpp -o PrimitiveEyes.o $(CXXFLAGS)
+
+Eyes.o: Eyes.cpp
+	$(CPP) -c Eyes.cpp -o Eyes.o $(CXXFLAGS)
+
+AdvancedNervousSystem.o: AdvancedNervousSystem.cpp
+	$(CPP) -c AdvancedNervousSystem.cpp -o AdvancedNervousSystem.o $(CXXFLAGS)
+
+NoNervousSystem.o: NoNervousSystem.cpp
+	$(CPP) -c NoNervousSystem.cpp -o NoNervousSystem.o $(CXXFLAGS)
+
+Exploder.o: Exploder.cpp
+	$(CPP) -c Exploder.cpp -o Exploder.o $(CXXFLAGS)
+
+Ghost.o: Ghost.cpp
+	$(CPP) -c Ghost.cpp -o Ghost.o $(CXXFLAGS)
+
+Flyer.o: Flyer.cpp
+	$(CPP) -c Flyer.cpp -o Flyer.o $(CXXFLAGS)
+
+Fadeout.o: Fadeout.cpp
+	$(CPP) -c Fadeout.cpp -o Fadeout.o $(CXXFLAGS)
+
+TitleScreen.o: TitleScreen.cpp
+	$(CPP) -c TitleScreen.cpp -o TitleScreen.o $(CXXFLAGS)
+
+Fadein.o: Fadein.cpp
+	$(CPP) -c Fadein.cpp -o Fadein.o $(CXXFLAGS)
+
+GameOverScreen.o: GameOverScreen.cpp
+	$(CPP) -c GameOverScreen.cpp -o GameOverScreen.o $(CXXFLAGS)
+
+GameCompleteScreen.o: GameCompleteScreen.cpp
+	$(CPP) -c GameCompleteScreen.cpp -o GameCompleteScreen.o $(CXXFLAGS)
