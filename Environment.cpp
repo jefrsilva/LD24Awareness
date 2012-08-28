@@ -133,13 +133,6 @@ void Environment::setupWorld() {
         addObject(food);
     }
 
-    for (int i = 0; i < 20; i++) {
-        Vector2D position = getRandomSpawnPosition(1, 1, 9, 9);
-        Flyer *flyer = new Flyer();
-        flyer->setPosition(position.getX(), position.getY());
-        addObject(flyer);
-    }
-
     {
         Vector2D position = getRandomSpawnPosition(1, 1, 1, 1);
         Food *food = new Food("1", 0.0);

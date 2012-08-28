@@ -31,7 +31,7 @@ Animal::Animal() : Object(OBJ_TYPE_ANIMAL) {
 
 Animal::Animal(std::string DNASequence) : Object(OBJ_TYPE_ANIMAL) {
     energy = 80.0;
-    speed = 245.0;
+    speed = 80.0;
     this->dna = DNA(DNASequence);
 
     if (!samplesInitialized) {
